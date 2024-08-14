@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 - Alledrogo</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- specjalne dostosowania -->
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer {
+            position: absolute !important;
+        }
+    </style>
+
+    <!-- ikonki w css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="top-nav">
+        <a href="javascript:void(0)" id="hamburger" onclick="toggleHamburger()">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </a>
+        
+        <!-- logo/powrót do index -->
+        <a id="logo-container" href="index.html">
+            <img src="assets/images/logo.svg" alt="Alledrogo">
+        </a>
+
+        <div class="search-container">
+            <input type="search" placeholder="czego szukasz, przybyszu?" autocomplete="off">
+            <button type="button" id="search-button">SZUKAJ</button>
+        </div>
+        
+        <!-- mógłbym to zrobić na atrybutach aria- i expanded, ale w javascriptcie jest łatwiej -->
+        <ul id="menu">
+            <!--lepiej sie nie dało..-->
+            <li><a href="404.html"><i class="fa-solid fa-laptop" style="color: #4955ff !important;"></i> Elektronika</a></li>
+            <li><a href="404.html"><i class="fa-solid fa-shirt" style="color: #ff3d2e !important;"></i> Moda</a></li>
+            <li><a href="404.html"><i class="fa-solid fa-house" style="color: #f5941c !important;"></i> Dom i Ogród</a></li>
+            <li><a href="404.html"><i class="fa-solid fa-car-burst" style="color: #0b4a6c !important;"></i> Samochody</a></li>
+            <li><a href="404.html"><i class="fa-solid fa-child-reaching" style="color: #fa9690 !important;"></i> Dziecko</a></li>
+            <li><a href="404.html"><i class="fa-solid fa-briefcase-medical" style="color: #03a9f4 !important;"></i> Zdrowie</a></li>
+            <li><a href="404.html"><i class="fa-solid fa-book-open" style="color: #319fb6 !important;"></i> Kultura i Rozrywka</a></li>
+            <li><a href="404.html"><i class="fa-solid fa-building" style="color: #045762 !important;"></i> Nieruchomości</a></li>
+            <li><a href="404.html"><i class="fa-solid fa-tree" style="color: #df2e38 !important;"></i> Święta i Karnawał</a></li>
+        </ul>
+
+        <div class="right">
+            <a href="#"><i class="fa-solid fa-heart fa-xl icon"></i></a>
+            <a href="#"><i class="fa-solid fa-comments fa-xl icon"></i></a>
+            <a href="#"><i class="fa-sharp fa-solid fa-xl fa-bag-shopping"></i></a>
+        </div>
+    </div>
+
+    <div id="page-mask" class="transparent"></div>
+
+    <div class="container">
+        <h1><i class="fa-solid fa-frog"></i> Stronę zjadły myszy.</h1>
+        <h2>404</h2>
+    </div>
+
+    <div class="footer">
+        <p style="padding-left: 48px;">Korzystanie z serwisu oznacza akceptację <a href="regulamin.html">regulaminu</a>. Stronę opracował awli</p>
+        <a id="footer-image-container" href="index.html">
+            <img src="assets/images/logo.svg" alt="Alledrogo">
+        </a>
+    </div>
+
+    <script src="assets/navbar.js"></script>
+</body>
+</html>
